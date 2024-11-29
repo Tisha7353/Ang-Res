@@ -1,27 +1,59 @@
-# Assignment
+Portfolio Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+This is a personal portfolio website built using Angular. The website showcases the following sections:
 
-## Development server
+Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Easy Features (1 mark each):
 
-## Code scaffolding
+1. Header Section
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Displays your name, job title, and contact information at the top of the resume.
 
-## Build
+2. Profile Picture
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Adds a static profile picture to the resume.
 
-## Running unit tests
+3. Experience Section
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Lists job titles, company names, and dates in a structured format.
 
-## Running end-to-end tests
+Includes a modal popup to display detailed job responsibilities when clicking on an item.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Modal Features:
 
-## Further help
+Opens at the top of the screen without fading the background.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Closes when clicking outside the modal.
+
+4. Education Section
+
+Includes your educational background with degree, institution, and graduation date.
+
+5. Skills Section
+
+Displays technical and soft skills in a list or grid format.
+
+6. Hobbies/Interests Section
+
+Adds a section for hobbies or personal interests.
+
+Medium Features (2 marks each):
+
+7. Static Contact Information
+
+Provides a section with email address, phone number, and LinkedIn profile.
+
+Email: <a href="mailto:your-email@example.com">your-email@example.com</a>
+
+8. Simple Navigation
+
+Implements basic navigation to scroll or navigate between sections of the resume.
+
+9. Downloadable PDF
+
+Includes a button to download the resume as a PDF.
+
+10. Static References
+
+Lists references or testimonials without interactivity.
