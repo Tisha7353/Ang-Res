@@ -1,0 +1,33 @@
+<section class="hobbies-section" id="hobbies-section">
+  <div class="header-container">
+    <h2>Hobbies</h2>
+    <button class="toggle-btn" (click)="toggleHobbies()">
+      {{ showHobbies ? 'Hide Hobbies' : 'Show Hobbies' }}
+    </button>
+  </div>
+
+  <ul *ngIf="showHobbies" class="hobbies-list">
+    <li *ngFor="let hobby of hobbies" class="hobby-item">{{ hobby }}</li>
+  </ul>
+</section>
+
+<section id="timeline">
+  <h2>Interactive Timeline</h2>
+  <div class="timeline">
+    <div
+      *ngFor="let event of timeline; let i = index"
+      class="timeline-item"
+      (click)="selectEvent(event, i)"
+    >
+      <div class="timeline-date">{{ event.date }}</div>
+      <div class="timeline-title">{{ event.title }}</div>
+
+      <!-- Event Details (only show for the selected event) -->
+      <div *ngIf="selectedEventIndex === i" class="event-details">
+        <h3>{{ event.title }}</h3>
+        <p>{{ event.description }}</p>
+       
+      </div>
+    </div>
+  </div>
+</section>

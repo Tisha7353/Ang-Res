@@ -1,0 +1,47 @@
+/* Skills Section */
+.skills {
+  margin: 30px 0; /* Margin for spacing around the section */
+  padding: 20px; /* Padding for better layout */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ddd; /* Border for definition */
+}
+
+/* Skills Section Title */
+.skills h2 {
+  font-size: 1.8em; /* Large font size for section title */
+  margin-bottom: 15px; /* Space below title */
+  text-align: left; /* Align title to the left */
+  color: #333; /* Dark color for the title */
+  border-bottom: 2px solid #ccc; /* Underline the title */
+  padding-bottom: 5px; /* Padding below the title */
+}
+
+/* Skill List */
+.skills ul {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+}
+
+.skill-item {
+  padding: 10px; /* Padding for each skill item */
+  margin-bottom: 10px; /* Space between each skill item */
+  background-color: #fff; /* White background for items */
+  border-radius: 6px; /* Rounded corners for items */
+  cursor: pointer; /* Cursor pointer to indicate clickable items */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.skill-item:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.skill-item:active {
+  background-color: #c0c0c0; /* Darker color when clicked */
+}
+.rating-text {
+  font-size: 1em;
+  color: #555;
+  margin-left: 10px;
+  font-weight: bold;
+}

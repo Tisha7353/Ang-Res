@@ -1,0 +1,60 @@
+
+<section class="work-experience" id="work-experience">
+  <h2>Work Experience</h2>
+  <ul class="work-experience-list">
+    <li 
+      *ngFor="let job of jobs" 
+      class="work-experience-item" 
+      (click)="openModal(job)"
+    >
+      <strong>{{ job.title }}</strong> at {{ job.company }} 
+      ({{ job.startDate }} - {{ job.endDate }})
+    </li>
+  </ul>
+
+
+  <div
+  class="modal fade"
+  id="jobModal"
+  tabindex="-1"
+  aria-labelledby="jobModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="true"
+  data-bs-dismiss="modal"
+  #jobModal
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="jobModalLabel">{{ selectedJob?.title }}</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Company:</strong> {{ selectedJob?.company }}</p>
+        <p><strong>Duration:</strong> {{ selectedJob?.startDate }} - {{ selectedJob?.endDate }}</p>
+        <h6>Responsibilities:</h6>
+        <ul>
+          <li *ngFor="let task of selectedJob?.responsibilities">{{ task }}</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+ 

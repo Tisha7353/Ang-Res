@@ -1,0 +1,110 @@
+/* Base styling for the navbar */
+.resume-navbar {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Space around the navbar */
+    position: sticky; /* Keeps navbar at the top while scrolling */
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top */
+    display: flex;
+    justify-content: center; /* Center align the navbar items horizontally */
+    align-items: center; /* Vertically center align the navbar items */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Navbar list styling */
+  .resume-navbar ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout */
+    gap: 20px; /* Space between items */
+    align-items: center; /* Vertically center align the items */
+  }
+  
+  /* Navbar items */
+  .resume-navbar ul li {
+    display: inline-flex; /* Flex layout for better control */
+    align-items: center; /* Vertically center the items */
+  }
+  
+  /* Links inside the navbar */
+  .resume-navbar ul li a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 16px; /* Padding for clickable area */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for links */
+  .resume-navbar ul li a:hover {
+    background-color: #555; /* Darker background on hover */
+  }
+  
+  /* Button for download */
+  .resume-navbar ul li button {
+    background-color: #007bff; /* Bootstrap primary button color */
+    color: #fff; /* White text */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for button */
+  .resume-navbar ul li button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .resume-navbar {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align */
+    }
+  
+    .resume-navbar ul {
+      flex-direction: column; /* Vertical layout for items */
+      gap: 10px; /* Adjust spacing */
+    }
+  }
+  
+  
+  /* Consistent Header Styles */
+  .resume-header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .resume-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .resume-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .resume-header p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .resume-header a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .resume-header a:hover {
+    text-decoration: underline;
+  }
+  

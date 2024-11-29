@@ -1,0 +1,25 @@
+/* Container for the profile picture */
+.profile-picture-container {
+    text-align: center; /* Center align the image */
+    margin: 20px 0; /* Add spacing around the container */
+  }
+  
+  /* Styling for the profile picture */
+  .profile-picture {
+    border-radius: 50%; /* Makes the image circular */
+    width: 120px; /* Set a consistent width */
+    height: 120px; /* Ensures the aspect ratio remains square */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    margin: 0 auto; /* Centers the image within the container */
+    border: 2px solid #ddd; /* Adds a subtle border for better definition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .profile-picture {
+      width: 100px; /* Adjust size for smaller screens */
+      height: 100px;
+    }
+  }
+  

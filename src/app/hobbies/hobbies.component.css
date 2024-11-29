@@ -1,0 +1,136 @@
+/* hobbies-portfolio.component.css */
+.hobbies-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Aligns items to both ends */
+  align-items: center; /* Vertically centers the items */
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+}
+
+.toggle-btn {
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #45a049;
+}
+
+.hobbies-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hobby-item {
+  font-size: 1.2em;
+  margin: 5px 0;
+  padding: 5px;
+  
+  border-radius: 5px;
+  color: #555;
+}
+
+.hobby-item:hover {
+  background-color: #ccc;
+}
+
+  /* timeline.component.css */
+  #timeline {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .timeline {
+    position: relative;
+    
+    list-style-type: none;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-left: 3px solid #4CAF50;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .timeline-date {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .event-details {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-details h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .event-details p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

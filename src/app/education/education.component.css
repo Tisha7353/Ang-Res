@@ -1,0 +1,51 @@
+/* Education Section */
+/* Initial state: hidden and transparent */
+
+  
+  /* When the section is in view */
+  .education.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+.education {
+    opacity: 0;
+    transform: translateY(50px); /* Start from 50px lower */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    margin: 30px 0; /* Add spacing around the section */
+    padding: 20px; /* Padding for readability */
+    border: 1px solid #ddd; /* Subtle border to define the section */
+    border-radius: 8px; /* Rounded corners for modern look */
+    background-color: #f9f9f9; /* Light background for differentiation */
+  }
+  
+  .education h2 {
+    font-size: 1.8em; /* Larger font size for section title */
+    margin-bottom: 15px; /* Space between title and content */
+    color: #333; /* Dark text for the title */
+    text-align: left; /* Left-align the title */
+    border-bottom: 2px solid #ccc; /* Underline the title */
+    padding-bottom: 5px; /* Space between title and underline */
+  }
+  
+  /* Education Item */
+  .education-item {
+    margin: 15px 0; /* Space between items */
+    padding: 10px; /* Padding for each item */
+    background-color: #fff; /* White background for clarity */
+    border-radius: 6px; /* Rounded corners for items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .education-item h3 {
+    font-size: 1.3em; /* Slightly larger for the degree */
+    font-weight: bold; /* Bold for emphasis */
+    color: #555; /* Darker text color for degree */
+    margin-bottom: 5px; /* Space below the degree */
+  }
+  
+  .education-item p {
+    font-size: 1.1em; /* Slightly larger for readability */
+    color: #777; /* Lighter color for institution and graduation date */
+  }
+  

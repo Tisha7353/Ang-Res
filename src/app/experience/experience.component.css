@@ -1,0 +1,67 @@
+/* Work Experience Section */
+.work-experience {
+  opacity: 0;
+  transform: translateY(50px); /* Start from 50px lower */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  margin: 30px 0; /* Add spacing around the section */
+  padding: 20px; /* Add padding for better readability */
+  border: 1px solid #ddd; /* Subtle border for definition */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  background-color: #f9f9f9; /* Light background for differentiation */
+}
+.work-experience.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.work-experience h2 {
+  font-size: 1.8em; /* Larger font size for the section title */
+  margin-bottom: 15px; /* Spacing between the title and the list */
+  color: #333; /* Darker color for emphasis */
+  text-align: left; /* Align title to the left */
+  border-bottom: 2px solid #ccc; /* Underline the title */
+  padding-bottom: 5px; /* Space between the text and underline */
+}
+
+/* Work Experience List */
+.work-experience-list {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.work-experience-item {
+  margin: 10px 0; /* Space between list items */
+  padding: 10px; /* Add padding for hover effect */
+  cursor: pointer; /* Indicate clickability */
+  font-size: 1.1em; /* Slightly larger text for readability */
+  color: #444; /* Neutral text color */
+  border-radius: 6px; /* Rounded corners for items */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.work-experience-item:hover {
+  background-color: #ddd; /* Highlight background on hover */
+  color: #000; /* Darken text on hover */
+}
+
+  /* Position the modal at the top of the screen */
+.modal.fade .modal-dialog {
+  position: fixed;
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px; /* Optional: Adds some space from the top */
+}
+
+
+
+  .modal-header {
+    background: #007bff;
+    color: white;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
